@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flight Explorer</title>
+  </head>
+  <body>
+    <div>
+        <a href="index.html">
+      <h1>
+        <img
+          class="logo"
+          src="https://static.thenounproject.com/png/3782905-200.png"
+          alt=""
+        />Welcome to Flight Explorer
+      </h1>
+    </a>
+      <p class="yp">The fastest way to search for flights and prices!</p>
+    </div>
+    <h1 id="title-action" align="center">Starting place:</h1>
+
+    <form id="form">
+      <input id="search" type="text" placeholder="" autocomplete="off" />
+    </form>
+
+    <form id="form2" class="display">
+      <input id="search2" type="text" placeholder="" autocomplete="off" />
+    </form>
+
+    <div id="wrapper" class="display">
+    <form id="form3" class="form3">
+        <h1>Select Departing Date</h1>
+        <br />
+        <input
+          id="start"
+          type="date"
+          name="trip-start"
+          value="2021-09-22"
+          min="2021-01-01"
+          max="2021-12-31"
+        /><br>
+        <button class="checker" type="submit">Check flights!</button>
+      </form></div>
+
+    <div id="results-message"></div>
+    <div id="main"></div>
+    <div id="final-results"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
